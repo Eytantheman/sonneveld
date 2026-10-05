@@ -1,0 +1,174 @@
+{
+  "version": 2,
+  "tonemapping": "none",
+  "highPrecisionRendering": false,
+  "background": {
+    "color": [
+      0.07,
+      0.07,
+      0.075
+    ]
+  },
+  "postEffectSettings": {
+    "sharpness": {
+      "enabled": false,
+      "amount": 0
+    },
+    "bloom": {
+      "enabled": false,
+      "intensity": 0.1,
+      "blurLevel": 2
+    },
+    "grading": {
+      "enabled": false,
+      "brightness": 1,
+      "contrast": 1,
+      "saturation": 1,
+      "tint": [
+        1,
+        1,
+        1
+      ]
+    },
+    "vignette": {
+      "enabled": false,
+      "intensity": 0.5,
+      "inner": 0.3,
+      "outer": 0.75,
+      "curvature": 1
+    },
+    "fringing": {
+      "enabled": false,
+      "intensity": 0.5
+    }
+  },
+  "animTracks": [],
+  "cameras": [
+    {
+      "initial": {
+        "position": [
+          2.8,
+          1.6,
+          -8.9
+        ],
+        "target": [
+          -0.4,
+          0.6,
+          -11.6
+        ],
+        "fov": 75
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "position": [
+        0.44,
+        0.6,
+        -11.79
+      ],
+      "title": "Colour on large surfaces",
+      "text": "In the bedrooms Van der Leck’s colours cover large surfaces. Sonneveld House is the earliest known Dutch interior to use his fabrics for Metz & Co.",
+      "extras": {
+        "id": "bedroom-colour"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            2.4,
+            1.5,
+            -9.4
+          ],
+          "target": [
+            0.44,
+            0.6,
+            -11.79
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        1.6,
+        0.6,
+        -11.0
+      ],
+      "title": "The beds",
+      "text": "The architects drew every bedroom in detail, down to the furniture and where small paintings would hang.",
+      "extras": {
+        "id": "beds"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -1.0,
+            1.7,
+            -12.0
+          ],
+          "target": [
+            1.6,
+            0.6,
+            -11.0
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        0.32,
+        0.6,
+        -10.05
+      ],
+      "title": "Tubular steel armchairs",
+      "text": "Tubular steel furniture was the calling card of the New Building. Gispen supplied furniture and lamps from his catalogues for the whole house.",
+      "extras": {
+        "id": "bedroom-chairs"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            3.0,
+            1.9,
+            -8.8
+          ],
+          "target": [
+            0.32,
+            0.6,
+            -10.05
+          ],
+          "fov": 75
+        }
+      }
+    },
+    {
+      "position": [
+        -1.44,
+        1.4,
+        -12.48
+      ],
+      "title": "The corner window",
+      "text": "The steel frame allowed windows to wrap around the corner, letting daylight deep into the room.",
+      "extras": {
+        "id": "corner-window"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            1.6,
+            1.6,
+            -9.6
+          ],
+          "target": [
+            -1.44,
+            1.4,
+            -12.48
+          ],
+          "fov": 60
+        }
+      }
+    }
+  ],
+  "startMode": "default"
+}

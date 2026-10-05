@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>Sonneveld House · An index of objects</title>
+    <meta name="description" content="3D scans of the living room and bedroom of Sonneveld House (Brinkman & Van der Vlugt, Rotterdam 1933), as an index of archival material on the lives, origins and colonial sources of its objects." />
+    <link rel="stylesheet" href="./viewer/index.css" />
+    <style>
+        :root {
+            --red: #f00;
+            --black: #000;
+            --white: #fff;
+            --grey: #6b6b6b;
+            --font: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+            --gutter: clamp(16px, 2.4vw, 30px);
+        }
+        html, body { height: 100%; margin: 0; overflow: hidden; background: #111; }
+        body { font-family: var(--font); color: var(--white); -webkit-font-smoothing: antialiased; }
+        button { font-family: var(--font); }
+
+        #viewer { position: fixed; inset: 0; }
+        #viewer .sse-viewer { --sse-accent: var(--red); --sse-bkg: #111; }
+        /* the dossier panel presents annotation text, so hide the viewer's own panel */
+        #viewer .sse-annotation-title, #viewer .sse-annotation-text { display: none; }
+
+        .box { background: var(--white); color: var(--black); }
+
+        /* ---------- masthead ---------- */
+        .masthead { position: fixed; z-index: 10; top: var(--gutter); left: var(--gutter); pointer-events: none; }
+        h1 {
+            margin: 0; font-size: clamp(22px, 2.4vw, 32px); font-weight: 700; line-height: 1;
+            letter-spacing: -.04em; text-transform: uppercase; text-shadow: 0 0 24px rgba(0,0,0,.25);
+        }
+        .tagline { display: inline-block; margin: 8px 0 0; padding: 4px 7px 3px; font-size: 11px; font-weight: 700; }
+        .rooms { display: flex; margin-top: 12px; pointer-events: auto; border: 2px solid var(--white); width: max-content; }
+        .rooms button {
+            background: transparent; color: var(--white); border: 0; cursor: pointer;
+            padding: 7px 11px 6px; font-size: 12px; font-weight: 700; letter-spacing: -.02em; text-transform: uppercase;
+        }
+        .rooms button + button { border-left: 2px solid var(--white); }
+        .rooms button:hover { background: rgba(255,255,255,.2); }
+        .rooms button[aria-pressed="true"] { background: var(--white); color: var(--red); }
+
+        /* ---------- top right ---------- */
+        .topright { position: fixed; z-index: 10; top: var(--gutter); right: var(--gutter); display: flex; gap: 8px; align-items: flex-start; }
+        .topright a, .topright button {
+            border: 0; cursor: pointer; text-decoration: none; padding: 6px 9px 5px;
+            font-size: 12px; font-weight: 700; letter-spacing: -.02em;
+        }
+        .topright a:hover { color: var(--red); }
+        #indexBtn { background: var(--red); color: var(--white); text-transform: uppercase; }
+        #indexBtn:hover { background: var(--white); color: var(--red); }
+
+        /* ---------- side panel: dossier and index ---------- */
+        .panel {
+            position: fixed; z-index: 30; top: var(--gutter); right: var(--gutter); bottom: 84px;
+            width: min(420px, calc(100vw - 2 * var(--gutter))); box-sizing: border-box;
+            display: flex; flex-direction: column;
+            border: 2px solid var(--red);
+            transform: translateX(calc(100% + 40px)); transition: transform .3s cubic-bezier(.3,.7,.2,1);
+        }
+        .panel.open { transform: none; }
+        .panel .bar {
+            display: flex; justify-content: space-between; align-items: center; gap: 12px;
+            padding: 9px 14px 8px; border-bottom: 2px solid var(--red); color: var(--red);
+            font-size: 12px; font-weight: 700; letter-spacing: -.02em; flex: none;
+        }
+        .panel .bar button { background: none; border: 0; padding: 0; cursor: pointer; color: var(--red); font-size: 12px; font-weight: 700; letter-spacing: -.02em; }
+        .panel .bar button:hover { color: var(--black); }
+        .panel .bar .x { font-size: 18px; line-height: 1; margin-left: 14px; }
+        .panel .scroll { overflow-y: auto; padding: 14px 14px 22px; flex: 1; overscroll-behavior: contain; }
+        .panel .foot { display: flex; justify-content: space-between; border-top: 2px solid var(--red); padding: 8px 14px 7px; flex: none; }
+        .panel .foot button { background: none; border: 0; padding: 0; cursor: pointer; font-size: 12px; font-weight: 700; letter-spacing: -.02em; color: var(--black); }
+        .panel .foot button:hover { color: var(--red); }
+
+        .d-title { color: var(--red); font-size: 26px; font-weight: 700; line-height: .98; letter-spacing: -.045em; margin: 0 0 6px; }
+        .d-maker { font-size: 12px; font-weight: 700; letter-spacing: -.02em; margin: 0; }
+        .d-date { font-size: 12px; color: var(--grey); margin: 2px 0 12px; }
+        .d-summary { font-size: 14px; line-height: 1.4; letter-spacing: -.01em; margin: 0 0 14px; }
+
+        h3 {
+            font-size: 11px; font-weight: 700; letter-spacing: .02em; text-transform: uppercase; color: var(--red);
+            margin: 20px 0 8px; padding-top: 7px; border-top: 1px solid var(--red);
+        }
+
+        .gallery { display: grid; gap: 10px; }
+        .gallery figure { margin: 0; }
+        .gallery button { display: block; width: 100%; padding: 0; border: 0; background: #eee; cursor: zoom-in; }
+        .gallery img { display: block; width: 100%; height: auto; max-height: 260px; object-fit: cover; }
+        .gallery figcaption { font-size: 11px; line-height: 1.35; color: var(--grey); margin-top: 4px; }
+
+        .timeline { list-style: none; margin: 0; padding: 0 0 0 14px; border-left: 2px solid var(--red); }
+        .timeline li { position: relative; margin: 0 0 10px; font-size: 12.5px; line-height: 1.4; }
+        .timeline li::before { content: ''; position: absolute; left: -19px; top: 4px; width: 8px; height: 8px; background: var(--red); }
+        .timeline b { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .01em; }
+
+        table.materials { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.38; }
+        table.materials td { vertical-align: top; padding: 6px 0; border-bottom: 1px solid #ddd; }
+        table.materials td:first-child { width: 34%; padding-right: 10px; font-weight: 700; letter-spacing: -.02em; }
+        .flag {
+            display: inline-block; margin: 0 0 3px; padding: 1px 4px; font-size: 10px; font-weight: 700;
+            text-transform: uppercase; background: var(--red); color: var(--white);
+        }
+        ul.questions { margin: 0; padding: 0 0 0 16px; font-size: 12.5px; line-height: 1.4; }
+        ul.questions li { margin-bottom: 4px; }
+        ul.refs { list-style: none; margin: 0; padding: 0; font-size: 12px; line-height: 1.35; }
+        ul.refs li { margin-bottom: 5px; }
+        ul.refs a { color: var(--black); }
+        ul.refs a:hover { color: var(--red); }
+
+        /* index list */
+        .i-intro { font-size: 13px; line-height: 1.4; margin: 0 0 10px; }
+        .i-group { margin: 16px 0 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--red); }
+        .i-item {
+            display: grid; grid-template-columns: 64px 1fr; gap: 10px; width: 100%; text-align: left;
+            padding: 8px 0; border: 0; border-top: 1px solid #ddd; background: none; cursor: pointer; color: var(--black);
+        }
+        .i-item:hover .i-title { color: var(--red); }
+        .i-item img { width: 64px; height: 48px; object-fit: cover; background: #eee; display: block; }
+        .i-title { font-size: 14px; font-weight: 700; letter-spacing: -.035em; line-height: 1.05; }
+        .i-meta { font-size: 11px; color: var(--grey); margin-top: 3px; }
+        .i-tags { margin-top: 4px; display: flex; flex-wrap: wrap; gap: 3px; }
+        .i-tags span { font-size: 9.5px; font-weight: 700; text-transform: uppercase; padding: 1px 4px; background: var(--red); color: var(--white); }
+
+        /* ---------- lightbox ---------- */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,.92); display: none;
+            flex-direction: column; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox img { max-width: 100%; max-height: calc(100% - 90px); object-fit: contain; }
+        .lightbox .cap { max-width: 760px; margin-top: 12px; font-size: 12px; line-height: 1.4; text-align: center; }
+        .lightbox .cap a { color: var(--white); font-weight: 700; }
+        .lightbox .cap a:hover { color: var(--red); }
+        .lightbox .x { position: absolute; top: 14px; right: 18px; background: none; border: 0; color: var(--white); font-size: 28px; cursor: pointer; }
+
+        @media (max-width: 640px) {
+            .topright a { display: none; }
+            .tagline { display: none; }
+            .panel { top: auto; left: 0; right: 0; bottom: 0; width: 100%; height: 72vh; transform: translateY(105%); border-width: 2px 0 0; }
+            .panel.open { transform: none; }
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer"></div>
+
+    <header class="masthead">
+        <h1>Sonneveld House</h1>
+        <span class="tagline box">An index of objects · Brinkman &amp; Van der Vlugt, Rotterdam 1933</span>
+        <nav class="rooms" aria-label="Rooms">
+            <button data-room="livingroom" aria-pressed="true">Living room</button>
+            <button data-room="bedroom" aria-pressed="false">Bedroom</button>
+        </nav>
+    </header>
+
+    <div class="topright">
+        <button id="indexBtn">Index</button>
+        <a class="box" href="https://nieuweinstituut.nl/en/projects/huis-sonneveld" target="_blank" rel="noopener">Archive · Nieuwe Instituut ↗</a>
+    </div>
+
+    <aside class="panel box" id="panel" aria-live="polite">
+        <div class="bar">
+            <span id="barLabel"></span>
+            <span>
+                <button id="toIndex">Index</button>
+                <button class="x" id="panelClose" aria-label="Close">×</button>
+            </span>
+        </div>
+        <div class="scroll" id="panelBody"></div>
+        <div class="foot" id="panelFoot">
+            <button id="prev">← Previous</button>
+            <button id="next">Next →</button>
+        </div>
+    </aside>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="x" id="lbClose" aria-label="Close">×</button>
+        <img id="lbImg" alt="" />
+        <div class="cap"><span id="lbCap"></span> <a id="lbLink" target="_blank" rel="noopener">View in the archive ↗</a></div>
+    </div>
+
+    <script type="module">
+        import { createViewer } from './viewer/index.js';
+
+        const ROOMS = {
+            livingroom: { name: 'Living room', scene: './Sonneveld_Livingroom.sog', settings: './settings-livingroom.json' },
+            bedroom: { name: 'Bedroom', scene: './Bedroom.sog', settings: './settings-bedroom.json' }
+        };
+        const url = new URL(location.href);
+        const params = url.searchParams;
+        const $ = (id) => document.getElementById(id);
+
+        const dossiers = await fetch('./dossiers.json').then((r) => r.json());
+
+        let viewer = null;
+        let room = null;
+        let loadId = 0;
+        let current = null;          // dossier shown in the panel, null when the index is shown
+        let pendingLabel = null;     // label to select once a room has loaded
+
+        // archive images go through the archive's own resizer, falling back to the original file
+        const sized = (src, w) => `https://nieuweinstituut.nl/_next/image?url=${encodeURIComponent(src)}&w=${w}&q=75`;
+        const image = (src, w, alt = '') => {
+            const el = document.createElement('img');
+            el.src = sized(src, w);
+            el.alt = alt;
+            el.loading = 'lazy';
+            el.onerror = () => { el.onerror = null; el.src = src; };
+            return el;
+        };
+        const h = (tag, props = {}, ...children) => {
+            const el = Object.assign(document.createElement(tag), props);
+            el.append(...children.filter((c) => c !== null && c !== undefined));
+            return el;
+        };
+
+        // ---------- panel ----------
+        const panel = $('panel');
+        const body = $('panelBody');
+
+        const clearSelection = () => {
+            if (viewer?.state.loaded && viewer.state.selectedAnnotation !== null) viewer.selectAnnotation(null);
+        };
+        const closePanel = () => {
+            panel.classList.remove('open');
+            current = null;
+            clearSelection();
+        };
+
+        const roomLabels = () => dossiers.filter((d) => d.room === room).sort((a, b) => a.label - b.label);
+
+        const showDossier = (d) => {
+            current = d;
+            const count = dossiers.filter((x) => x.room === d.room).length;
+            $('barLabel').textContent = d.room
+                ? `${ROOMS[d.room].name} · ${String(d.label + 1).padStart(2, '0')} / ${String(count).padStart(2, '0')}`
+                : 'The house';
+            $('panelFoot').style.display = d.room ? '' : 'none';
+
+            const gallery = h('div', { className: 'gallery' }, ...d.images.map((im) => {
+                const btn = h('button', { title: 'Enlarge' }, image(im.src, 828, im.caption));
+                btn.addEventListener('click', () => openLightbox(im));
+                return h('figure', {}, btn, h('figcaption', { textContent: im.caption }));
+            }));
+
+            const timeline = h('ol', { className: 'timeline' }, ...d.life.map((s) =>
+                h('li', {}, h('b', { textContent: s.stage }), s.text)));
+
+            const materials = h('table', { className: 'materials' }, h('tbody', {}, ...d.materials.map((m) =>
+                h('tr', {},
+                    h('td', { textContent: m.material }),
+                    h('td', {},
+                        m.colonial ? h('span', { className: 'flag', textContent: 'Colonial source' }) : null,
+                        m.colonial ? h('br') : null,
+                        m.source)))));
+
+            body.replaceChildren(
+                h('h2', { className: 'd-title', textContent: d.title }),
+                h('p', { className: 'd-maker', textContent: d.maker }),
+                h('p', { className: 'd-date', textContent: d.date }),
+                h('p', { className: 'd-summary', textContent: d.summary }),
+                d.images.length ? gallery : null,
+                h('h3', { textContent: 'Life of the object' }), timeline,
+                h('h3', { textContent: 'Materials and sources' }), materials,
+                d.questions.length ? h('h3', { textContent: 'Open questions' }) : null,
+                d.questions.length ? h('ul', { className: 'questions' }, ...d.questions.map((q) => h('li', { textContent: q }))) : null,
+                h('h3', { textContent: 'Archive and references' }),
+                h('ul', { className: 'refs' }, ...d.refs.map((r) =>
+                    h('li', {}, h('a', { href: r.url, target: '_blank', rel: 'noopener', textContent: `${r.title} ↗` }))))
+            );
+            body.scrollTop = 0;
+            panel.classList.add('open');
+        };
+
+        const showIndex = () => {
+            current = null;
+            clearSelection();
+            $('barLabel').textContent = `Index · ${dossiers.length} entries`;
+            $('panelFoot').style.display = 'none';
+
+            const item = (d) => {
+                const colonial = [...new Set(d.materials.filter((m) => m.colonial).map((m) => m.material))];
+                const btn = h('button', { className: 'i-item' },
+                    d.images[0] ? image(d.images[0].src, 256) : h('img'),
+                    h('div', {},
+                        h('div', { className: 'i-title', textContent: d.title }),
+                        h('div', { className: 'i-meta', textContent: `${d.maker} · ${d.date}` }),
+                        colonial.length ? h('div', { className: 'i-tags' }, ...colonial.map((c) => h('span', { textContent: c }))) : null));
+                btn.addEventListener('click', () => goTo(d));
+                return btn;
+            };
+
+            const groups = [
+                ['The house', dossiers.filter((d) => !d.room)],
+                ...Object.entries(ROOMS).map(([key, r]) => [r.name, dossiers.filter((d) => d.room === key)])
+            ];
+            body.replaceChildren(
+                h('p', { className: 'i-intro', textContent: 'Each object in the scans opens a dossier: archival images, the life of the object from origin to archive, and where its materials came from. Red tags mark colonial sources.' }),
+                ...groups.flatMap(([name, list]) => [h('div', { className: 'i-group', textContent: name }), ...list.map(item)])
+            );
+            body.scrollTop = 0;
+            panel.classList.add('open');
+        };
+
+        // open a dossier from anywhere: switch room if needed, then fly to its label
+        const goTo = (d) => {
+            if (!d.room) return showDossier(d);
+            showDossier(d);
+            if (d.room !== room) {
+                pendingLabel = d.label;
+                loadRoom(d.room);
+            } else if (viewer?.state.loaded) {
+                viewer.selectAnnotation(d.label);
+            } else {
+                pendingLabel = d.label;
+            }
+        };
+
+        const step = (delta) => {
+            if (!current?.room) return;
+            const list = roomLabels();
+            goTo(list[(current.label + delta + list.length) % list.length]);
+        };
+
+        // ---------- lightbox ----------
+        const lbImg = $('lbImg');
+        const openLightbox = (im) => {
+            lbImg.onerror = () => { lbImg.onerror = null; lbImg.src = im.src; };
+            lbImg.src = sized(im.src, 1920);
+            lbImg.alt = im.caption;
+            $('lbCap').textContent = im.caption;
+            $('lbLink').href = im.href;
+            $('lightbox').classList.add('open');
+        };
+        const closeLightbox = () => $('lightbox').classList.remove('open');
+        $('lbClose').addEventListener('click', closeLightbox);
+        $('lightbox').addEventListener('click', (e) => { if (e.target === $('lightbox')) closeLightbox(); });
+        addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+        // ---------- rooms ----------
+        const loadRoom = async (key) => {
+            if (!ROOMS[key]) key = 'livingroom';
+            if (key === room && viewer) return;
+            room = key;
+            const id = ++loadId;
+            viewer?.destroy();
+            viewer = null;
+
+            document.querySelectorAll('.rooms button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.room === key)));
+            params.set('room', key);
+            history.replaceState(null, '', url);
+
+            const created = await createViewer({
+                container: $('viewer'),
+                settings: fetch(ROOMS[key].settings).then((r) => r.json()),
+                contentUrl: ROOMS[key].scene,
+                contents: fetch(ROOMS[key].scene),
+                renderer: params.has('webgl') ? 'webgl' : 'webgpu',
+                exposeGlobals: params.has('debug')
+            });
+            // a newer room was picked while this one was starting up
+            if (id !== loadId) {
+                created.destroy();
+                return;
+            }
+            viewer = created;
+            window.viewer = viewer;
+
+            viewer.events.on('selectedAnnotation:changed', (index) => {
+                if (index === null) {
+                    // clicking into the scene clears the selection: close the dossier with it
+                    if (current?.room) closePanel();
+                    return;
+                }
+                const d = dossiers.find((x) => x.room === room && x.label === index);
+                if (d && d !== current) showDossier(d);
+            });
+
+            const ready = () => {
+                // start still, at the authored view, instead of the viewer's automatic fly-around
+                viewer.state.cameraMode = 'orbit';
+                if (pendingLabel !== null) {
+                    viewer.selectAnnotation(pendingLabel);
+                    pendingLabel = null;
+                }
+            };
+            if (viewer.state.loaded) ready();
+            else viewer.events.once('loaded:changed', ready);
+        };
+
+        document.querySelectorAll('.rooms button').forEach((b) => b.addEventListener('click', () => {
+            if (b.dataset.room === room) return;
+            if (current?.room) {
+                panel.classList.remove('open');
+                current = null;
+            }
+            loadRoom(b.dataset.room);
+        }));
+        $('indexBtn').addEventListener('click', () => (panel.classList.contains('open') && !current ? closePanel() : showIndex()));
+        $('toIndex').addEventListener('click', showIndex);
+        $('panelClose').addEventListener('click', closePanel);
+        $('prev').addEventListener('click', () => step(-1));
+        $('next').addEventListener('click', () => step(1));
+
+        loadRoom(params.get('room') === 'bedroom' ? 'bedroom' : 'livingroom');
+    </script>
+</body>
+</html>

@@ -1,0 +1,821 @@
+[
+  {
+    "id": "van-nelle",
+    "title": "Follow the money: Van Nelle",
+    "maker": "Albertus Sonneveld, Van Nelle, Rotterdam",
+    "date": "1900–1950",
+    "summary": "Everything in this house was paid for by tobacco, coffee and tea. Albertus Sonneveld worked at Van Nelle for fifty years, rising from clerk to director of the tobacco division.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Van Nelle began in 1782 as a Rotterdam shop selling coffee, tea and tobacco. In the 19th century it became a factory business processing raw materials, partly from plantations on Java."
+      },
+      {
+        "stage": "Career",
+        "text": "Sonneveld joined in 1900, aged fourteen, trained in the tobacco trade and travelled to America for the first time at twenty-four. As director he spent months each year in the United States buying tobacco and arranging its shipment."
+      },
+      {
+        "stage": "The house",
+        "text": "Van Nelle’s architects, Brinkman & Van der Vlugt, who had just completed the Van Nelle Factory, designed the house and its complete interior. The family moved in in 1933."
+      },
+      {
+        "stage": "Archive",
+        "text": "The Nieuwe Instituut’s research project Collecting Otherwise names Sonneveld House as a case study, including “Sonneveld’s tobacco histories in Paducah USA and the plantations in Indonesia”."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Tobacco",
+        "source": "Bought in the American South and from the Dutch East Indies (Indonesia).",
+        "colonial": true
+      },
+      {
+        "material": "Coffee and tea",
+        "source": "Plantation crops from Java and elsewhere in the Dutch colonial empire.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Which plantations supplied Van Nelle in the years Sonneveld was director, and who worked on them?",
+      "What does the Paducah tobacco trade connect this house to?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/6_bihs_1_1_2300px_0_3_a5fcbfb100.jpeg",
+        "caption": "Mr Sonneveld arrives at the Van Nelle Factory, where he was one of the directors. Collection Nieuwe Instituut, on loan from BIHS.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/self-made-zakenman"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/tent_p1_3_59b4057c15.jpeg",
+        "caption": "The Van Nelle Factory, Rotterdam, by Brinkman & Van der Vlugt. Collection Nieuwe Instituut.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/architectuur-interieur"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/A4_A8176_4f5f12b0f5.jpg",
+        "caption": "Tea service on a tea trolley in Sonneveld House. Collection Nieuwe Instituut.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Self-made man, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/self-made-zakenman"
+      },
+      {
+        "title": "Collecting Otherwise: Post/De/Colonial, Nieuwe Instituut",
+        "url": "https://nieuweinstituut.nl/en/projects/collecting-otherwise/post-de-colonial"
+      },
+      {
+        "title": "Van Nelle Factory, European Route of Industrial Heritage",
+        "url": "https://www.erih.net/i-want-to-go-there/site/van-nelle-factory-world-heritage-site"
+      }
+    ],
+    "room": null,
+    "label": null
+  },
+  {
+    "id": "seascape",
+    "title": "Seascape with two botters",
+    "maker": "Willem Bastiaan Tholen (1860–1931)",
+    "date": "before 1931",
+    "summary": "Above the sofa hung a seascape with two botters, traditional Dutch fishing boats. The Sonnevelds paired avant-garde furniture with fairly traditional painting.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Painted by W.B. Tholen, a painter close to the Hague School, who died in 1931."
+      },
+      {
+        "stage": "In the house",
+        "text": "Hung above the living-room sofa, the main wall of the room."
+      },
+      {
+        "stage": "Archive",
+        "text": "Photographed for the museum’s Art and design pages."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Oil on canvas",
+        "source": "No direct colonial source identified.",
+        "colonial": false
+      },
+      {
+        "material": "The money",
+        "source": "Bought from a salary earned in Van Nelle’s trade in tobacco, coffee and tea (see “Follow the money”).",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "When and from whom did the family acquire the painting?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/hs_tholen_4_529b539cae.jpeg",
+        "caption": "Seascape with two botters, Willem Bastiaan Tholen (1860–1931).",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "room": "livingroom",
+    "label": 0
+  },
+  {
+    "id": "piano",
+    "title": "The grand piano",
+    "maker": "Maker not yet identified",
+    "date": "in place by 1933",
+    "summary": "The grand piano is already drawn into the architects’ design for the living room. Its place was fixed before the house was built.",
+    "life": [
+      {
+        "stage": "Design",
+        "text": "Drawn into Brinkman & Van der Vlugt’s interior design for the living room (archive BROX 93t21)."
+      },
+      {
+        "stage": "In the house",
+        "text": "Stands in the living room, next to the sofa and the seascape."
+      },
+      {
+        "stage": "Archive",
+        "text": "The design drawing is in the Brinkman & Van der Vlugt archive at the Nieuwe Instituut."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Ivory (key tops)",
+        "source": "Piano keys of this period were usually covered in elephant ivory, much of it auctioned in Antwerp and London from colonial Central and East Africa. Not yet verified for this instrument.",
+        "colonial": true
+      },
+      {
+        "material": "Ebony (black keys)",
+        "source": "A tropical hardwood, typically from Central Africa or South and Southeast Asia. Not yet verified for this instrument.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Who made the piano, and what are its keys actually made of?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/brox_93t21_5_2300px_2_99256a9e48.jpeg",
+        "caption": "Design drawing of the living room, with the grand piano drawn in. Collection Nieuwe Instituut, BROX 93t21.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/modern-gesamtkunstwerk"
+      }
+    ],
+    "refs": [
+      {
+        "title": "A modern Gesamtkunstwerk, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/modern-gesamtkunstwerk"
+      },
+      {
+        "title": "Ivory, slavery and the colonial networks of the piano, 1850–1931 (Sound & Science)",
+        "url": "https://soundandscience.net/contributions/ivory-slavery-and-the-colonial-networks-of-the-piano-1850-1931/"
+      }
+    ],
+    "room": "livingroom",
+    "label": 1
+  },
+  {
+    "id": "lion",
+    "title": "Lion",
+    "maker": "John Rädecker (1885–1956)",
+    "date": "1925 (replica)",
+    "summary": "A seated lion by John Rädecker, one of the leading Dutch sculptors between the wars. It stands next to the piano on a pedestal designed by Brinkman & Van der Vlugt.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Made in 1925. In the early 1920s Rädecker made similar animal figures for the collector Helene Kröller-Müller. The archive names Art Nouveau, Cubism and non-European art among his early influences."
+      },
+      {
+        "stage": "In the house",
+        "text": "The family owned two works by Rädecker: this lion, next to the piano, and a mask from 1924, said to be a portrait study of Puck, in the staircase."
+      },
+      {
+        "stage": "Dispersal",
+        "text": "The original left the house with the family. During the restoration it was traced to one of the Sonnevelds’ grandsons."
+      },
+      {
+        "stage": "Archive",
+        "text": "A cast was taken from the original, and the lion in the house today is a cast-stone replica. Glass negatives in the collection show it in the living room."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Cast stone (replica)",
+        "source": "Cast from the original during the restoration.",
+        "colonial": false
+      },
+      {
+        "material": "Visual sources",
+        "source": "The archive names non-European art among Rädecker’s early influences. Which works he drew on, and how he saw them, for example in colonial or ethnographic collections, is not documented here.",
+        "colonial": true
+      },
+      {
+        "material": "The money",
+        "source": "Bought from a salary earned in Van Nelle’s trade in tobacco, coffee and tea (see “Follow the money”).",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "What is the original made of, and where is it now?",
+      "Which non-European works influenced Rädecker’s animal figures, and through which collections did he know them?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/mg_3102_2_fa09607170.jpeg",
+        "caption": "The lion on its pedestal. Photo Johannes Schwartz.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/het-leeuwtje-van-r%C3%A4decker"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/cand_gisp157_05_2000px_2_2ec9c9f0cf.jpeg",
+        "caption": "Living room, with the sculpture by Rädecker. Collection Nieuwe Instituut, glass plate negatives collection.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/het-leeuwtje-van-r%C3%A4decker"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Rädecker’s lion, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/het-leeuwtje-van-r%C3%A4decker"
+      },
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "room": "livingroom",
+    "label": 2
+  },
+  {
+    "id": "rattan-chair",
+    "title": "Cantilever chair with woven seat",
+    "maker": "Maker not yet identified",
+    "date": "c. 1930",
+    "summary": "A tubular steel cantilever chair with a woven seat and back. Cane and rattan reached Dutch furniture makers mainly from the Dutch East Indies.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Rattan palms grow wild in the forests of Kalimantan, Sulawesi and Sumatra, where it was gathered and traded through ports such as Banjarmasin and Surabaya."
+      },
+      {
+        "stage": "Made",
+        "text": "Cantilever chairs with woven seats were made in series by firms such as Thonet. Sketches for the interior from 1932 often mention Thonet furniture."
+      },
+      {
+        "stage": "In the house",
+        "text": "Stands in the living room, in front of the piano."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Rattan / cane",
+        "source": "Commercial rattan came mostly from Indonesia, then the Dutch East Indies.",
+        "colonial": true
+      },
+      {
+        "material": "Chromium (plating)",
+        "source": "In 1931 Southern Rhodesia (a British colony) supplied 37% of the world’s chromite exports and New Caledonia (a French colony) 16%.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Is this an original Sonneveld piece, and who made it?",
+      "Where was the cane gathered and woven?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/sonn_34_15_2500px_56062d9c32.jpeg",
+        "caption": "The sitting room in 1933, furnished with tubular steel chairs. Photo Piet Zwart. Collection Nieuwe Instituut. © Piet Zwart / Nederlands Fotomuseum.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "FAO: Rattan, current research issues and prospects",
+        "url": "https://www.fao.org/4/Y2783E/y2783e19.htm"
+      },
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "room": "livingroom",
+    "label": 3
+  },
+  {
+    "id": "gispen",
+    "title": "Tubular steel armchairs",
+    "maker": "W.H. Gispen",
+    "date": "1933",
+    "summary": "Serial tubular steel furniture and lamps by Gispen define the modern interior. The architects chose them from Gispen’s catalogues.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Gispen sold standardised tubular steel furniture through illustrated catalogues, such as no. 52."
+      },
+      {
+        "stage": "In the house",
+        "text": "The museum collection includes Gispen armchairs no. 407 and 408 from 1933."
+      },
+      {
+        "stage": "Archive",
+        "text": "The Gispen catalogues are part of the Gispen archive at the Nieuwe Instituut."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Steel tube",
+        "source": "European steel.",
+        "colonial": false
+      },
+      {
+        "material": "Chromium (plating)",
+        "source": "In 1931 Southern Rhodesia (a British colony) supplied 37% of the world’s chromite exports and New Caledonia (a French colony) 16%.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Which mine did the chromium on these frames come from?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/mg_2611_8bed2d012b.jpg",
+        "caption": "W.H. Gispen, armchairs no. 407 and 408, 1933. Collection Nieuwe Instituut. Photo Johannes Schwartz.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/over-huis-sonneveld"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/GISP_56_meubelcatalogus_no52_19_featured_44319a3298.jpg",
+        "caption": "Gispen furniture catalogue no. 52. Collection Nieuwe Instituut.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "title": "U.S. Bureau of Mines, Minerals Yearbook: chromite (1930s)",
+        "url": "https://search.library.wisc.edu/digital/AEEHB2IT65SPOS8F/text/AP3GNGYDLNGBYE8Z"
+      }
+    ],
+    "room": "livingroom",
+    "label": 4
+  },
+  {
+    "id": "carpet",
+    "title": "The carpet",
+    "maker": "Supplied by Metz & Co, Amsterdam",
+    "date": "1930s",
+    "summary": "The archive records a Moroccan carpet bought from Metz & Co, the Amsterdam shop for modern interiors.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Hand-knotted wool carpets were made by Amazigh (Berber) weavers in Morocco, then a French protectorate (1912–1956)."
+      },
+      {
+        "stage": "Sold",
+        "text": "Metz & Co sold such carpets alongside modern furniture, lamps and Van der Leck fabrics."
+      },
+      {
+        "stage": "In the house",
+        "text": "A carpet of this kind lay in the living area."
+      },
+      {
+        "stage": "Archive",
+        "text": "Metz & Co folders and catalogues survive in the E. Berkovich archive at the Nieuwe Instituut."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Wool, hand-knotted",
+        "source": "Morocco, under French colonial rule. Modernist interiors embraced these carpets, usually without their makers’ names.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Is the carpet in the scan the Moroccan carpet from Metz & Co?",
+      "Which region and which weavers made it?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/berk106_01_1000px_b4980b5528.jpeg",
+        "caption": "Image in a Metz & Co folder. Photographer unknown. Collection Nieuwe Instituut, E. Berkovich archive.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/metz_cat_1000px_48865022f1.jpeg",
+        "caption": "Cover of a Metz & Co lighting catalogue, c. 1934. Collection Nieuwe Instituut, E. Berkovich archive.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "title": "Van der Leck's colours, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      }
+    ],
+    "room": "livingroom",
+    "label": 5
+  },
+  {
+    "id": "lamps",
+    "title": "Light without shadows",
+    "maker": "Gispen, Giso lamps",
+    "date": "1929–1933",
+    "summary": "The family chose 22 different lamps from Giso catalogue no. 29 (1929). The opal glass spreads the light evenly, without glare or hard shadows.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Gispen developed its own Giso glass for diffused light."
+      },
+      {
+        "stage": "In the house",
+        "text": "Ceiling lamps light the living room and library."
+      },
+      {
+        "stage": "Archive",
+        "text": "The Giso catalogue of 1929 is in the Gispen archive at the Nieuwe Instituut."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Opal glass, plated metal",
+        "source": "No colonial source identified yet.",
+        "colonial": false
+      }
+    ],
+    "questions": [
+      "Where were the metals for the fittings mined?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/gisp_31_1_2000px_0_3_ae7f16a427.jpeg",
+        "caption": "Cover of the Giso catalogue, 1929. Collection Nieuwe Instituut.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/a4a8276_4_86b42d0611.jpeg",
+        "caption": "Philinea lamps. Photo Johannes Schwartz.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/licht-zonder-schaduwen"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Light without shadows, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/licht-zonder-schaduwen"
+      },
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "room": "livingroom",
+    "label": 6
+  },
+  {
+    "id": "window",
+    "title": "The ribbon window",
+    "maker": "Brinkman & Van der Vlugt",
+    "date": "1933",
+    "summary": "A steel frame carries the house, so the façade could open up into long bands of glass and the rooms could flow into each other.",
+    "life": [
+      {
+        "stage": "Design",
+        "text": "The architects applied the steel-frame construction they had developed for the Van Nelle Factory."
+      },
+      {
+        "stage": "In the house",
+        "text": "The window runs along the living room and the library."
+      },
+      {
+        "stage": "Archive",
+        "text": "Piet Zwart photographed the room in 1933."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Steel, glass",
+        "source": "European industry. No direct colonial source identified.",
+        "colonial": false
+      }
+    ],
+    "questions": [],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/sonn_34_15_2500px_56062d9c32.jpeg",
+        "caption": "Sitting room, with Mrs Sonneveld’s desk on the left. Photo Piet Zwart, 1933. Collection Nieuwe Instituut. © Piet Zwart / Nederlands Fotomuseum.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Architecture and interior, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/architectuur-interieur"
+      }
+    ],
+    "room": "livingroom",
+    "label": 7
+  },
+  {
+    "id": "desk",
+    "title": "Desk and yellow chair",
+    "maker": "Bureau B91, Bruno Weil, 1931 (probably)",
+    "date": "1931",
+    "summary": "In 1933 Mrs Sonneveld’s small desk stood by the window: Bruno Weil’s tubular steel B91. The yellow chair is one of Van der Leck’s colour accents.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Designed by Bruno Weil in 1931. Sketches from 1932 often mention furniture by the German-Austrian firm Thonet."
+      },
+      {
+        "stage": "In the house",
+        "text": "Piet Zwart’s 1933 photograph shows the desk at the window of the sitting room."
+      },
+      {
+        "stage": "Colour",
+        "text": "Vermilion, cornflower blue and yolk yellow appear as accents among bronze, brown and beige."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Chromium (plating)",
+        "source": "In 1931 Southern Rhodesia (a British colony) supplied 37% of the world’s chromite exports and New Caledonia (a French colony) 16%.",
+        "colonial": true
+      },
+      {
+        "material": "The money",
+        "source": "Bought from a salary earned in Van Nelle’s trade in tobacco, coffee and tea (see “Follow the money”).",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Is the desk in the scan the B91 from the 1933 photograph?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/sonn_34_15_2500px_56062d9c32.jpeg",
+        "caption": "Bruno Weil, desk no. B91, 1931. Sitting room, with Mrs Sonneveld’s desk on the left. Photo Piet Zwart. © Piet Zwart / Nederlands Fotomuseum.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "title": "Van der Leck's colours, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      }
+    ],
+    "room": "livingroom",
+    "label": 8
+  },
+  {
+    "id": "library",
+    "title": "The library",
+    "maker": "Orange-red armchairs; portrait attributed to Jozef Israëls",
+    "date": "1933",
+    "summary": "Behind the curtain lies the library, with its orange-red armchairs. A portrait attributed to Jozef Israëls hung against the bookcase.",
+    "life": [
+      {
+        "stage": "In the house",
+        "text": "A curtain divides the library from the living room, so the two can be one space."
+      },
+      {
+        "stage": "Glass",
+        "text": "Vases by A.D. Copier from the Leerdam glassworks stood in the library and sitting room."
+      },
+      {
+        "stage": "Archive",
+        "text": "Glass negatives in the collection show the vases in place."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Chromium (plating)",
+        "source": "In 1931 Southern Rhodesia (a British colony) supplied 37% of the world’s chromite exports and New Caledonia (a French colony) 16%.",
+        "colonial": true
+      },
+      {
+        "material": "The money",
+        "source": "Bought from a salary earned in Van Nelle’s trade in tobacco, coffee and tea (see “Follow the money”).",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Which books were on the shelves, and where were they bought?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/dsc_6788_1000px_3_7a01b61b0b.jpeg",
+        "caption": "Portrait attributed to Jozef Israëls. Collection Nieuwe Instituut, on loan from BIHS.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/cand_gisp157_04_2000px_c4f0f51342.jpeg",
+        "caption": "Vases in the library and sitting room. Collection Nieuwe Instituut, glass negatives.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/sjiek-winkelen-voor-leerdams-glas"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "title": "Shopping in style for Leerdam glass, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/sjiek-winkelen-voor-leerdams-glas"
+      }
+    ],
+    "room": "livingroom",
+    "label": 9
+  },
+  {
+    "id": "bedroom-colour",
+    "title": "Colour on large surfaces",
+    "maker": "Bart van der Leck, fabrics by Metz & Co",
+    "date": "1933",
+    "summary": "In the bedrooms Van der Leck’s colours cover large surfaces. Sonneveld House is the earliest known Dutch interior to use his fabrics for Metz & Co.",
+    "life": [
+      {
+        "stage": "Design",
+        "text": "Van der Leck’s palette: vermilion, cornflower blue and yolk yellow, with light grey, dark grey and brown."
+      },
+      {
+        "stage": "Made",
+        "text": "The fabrics came from Metz & Co’s new sample book in Van der Leck’s colours."
+      },
+      {
+        "stage": "Archive",
+        "text": "Metz & Co material survives in the E. Berkovich archive."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Textiles",
+        "source": "Fibre and dye sources not yet researched.",
+        "colonial": false
+      }
+    ],
+    "questions": [
+      "What were the fabrics made of, and where were the fibres grown?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/mg_2647_1_94bffd7fe5.jpeg",
+        "caption": "Van der Leck’s colours in the dining room: red, yellow, blue. Photo Johannes Schwartz.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      },
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/metz_cat_1000px_48865022f1.jpeg",
+        "caption": "Cover of a Metz & Co lighting catalogue, c. 1934. Collection Nieuwe Instituut, E. Berkovich archive.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Van der Leck's colours, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/de-kleuren-van-van-der-leck"
+      }
+    ],
+    "room": "bedroom",
+    "label": 0
+  },
+  {
+    "id": "beds",
+    "title": "The beds",
+    "maker": "Brinkman & Van der Vlugt, interior design",
+    "date": "1933",
+    "summary": "The architects drew every bedroom in detail, down to the furniture and where small paintings would hang.",
+    "life": [
+      {
+        "stage": "Design",
+        "text": "Design drawings for the bedrooms survive in the Brinkman & Van der Vlugt archive (BROX 93t21)."
+      },
+      {
+        "stage": "In the house",
+        "text": "The yellow headboards and bedside table repeat the room’s colour."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Wood, steel, textiles",
+        "source": "Sources not yet researched.",
+        "colonial": false
+      }
+    ],
+    "questions": [
+      "Whose bedroom was this, and who made the beds?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/9_brox_93t21_12_2300px_3_3ce9c49682.jpeg",
+        "caption": "Design drawing of a bedroom interior. Collection Nieuwe Instituut, BROX 93t21.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/modern-gesamtkunstwerk"
+      }
+    ],
+    "refs": [
+      {
+        "title": "A modern Gesamtkunstwerk, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/modern-gesamtkunstwerk"
+      },
+      {
+        "title": "Yellow (Gé’s bedroom), Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/geel"
+      }
+    ],
+    "room": "bedroom",
+    "label": 1
+  },
+  {
+    "id": "bedroom-chairs",
+    "title": "Tubular steel armchairs",
+    "maker": "Tubular steel, in the manner of Gispen",
+    "date": "1930s",
+    "summary": "Tubular steel furniture was the calling card of the New Building. Gispen supplied furniture and lamps from his catalogues for the whole house.",
+    "life": [
+      {
+        "stage": "Origin",
+        "text": "Serial furniture chosen from catalogues rather than made to measure."
+      },
+      {
+        "stage": "In the house",
+        "text": "A pair of yellow armchairs around a round table by the corner window."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Chromium (plating)",
+        "source": "In 1931 Southern Rhodesia (a British colony) supplied 37% of the world’s chromite exports and New Caledonia (a French colony) 16%.",
+        "colonial": true
+      }
+    ],
+    "questions": [
+      "Are these the original chairs, and from which catalogue?"
+    ],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/mg_2611_8bed2d012b.jpg",
+        "caption": "W.H. Gispen, armchairs no. 407 and 408, 1933. Collection Nieuwe Instituut. Photo Johannes Schwartz.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/over-huis-sonneveld"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Art and design, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/kunst-design"
+      },
+      {
+        "title": "U.S. Bureau of Mines, Minerals Yearbook: chromite (1930s)",
+        "url": "https://search.library.wisc.edu/digital/AEEHB2IT65SPOS8F/text/AP3GNGYDLNGBYE8Z"
+      }
+    ],
+    "room": "bedroom",
+    "label": 2
+  },
+  {
+    "id": "corner-window",
+    "title": "The corner window",
+    "maker": "Brinkman & Van der Vlugt",
+    "date": "1933",
+    "summary": "The steel frame allowed windows to wrap around the corner, letting daylight deep into the room.",
+    "life": [
+      {
+        "stage": "Design",
+        "text": "The same steel-frame construction as the ribbon window downstairs."
+      }
+    ],
+    "materials": [
+      {
+        "material": "Steel, glass",
+        "source": "No direct colonial source identified.",
+        "colonial": false
+      }
+    ],
+    "questions": [],
+    "images": [
+      {
+        "src": "https://cmsfiles.nieuweinstituut.nl/mg_2528_c69a386b6a.jpg",
+        "caption": "Sonneveld House from the garden.",
+        "href": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/over-huis-sonneveld"
+      }
+    ],
+    "refs": [
+      {
+        "title": "Architecture and interior, Sonneveld House",
+        "url": "https://nieuweinstituut.nl/en/projects/huis-sonneveld/architectuur-interieur"
+      }
+    ],
+    "room": "bedroom",
+    "label": 3
+  }
+]

@@ -1,0 +1,336 @@
+{
+  "version": 2,
+  "tonemapping": "none",
+  "highPrecisionRendering": false,
+  "background": {
+    "color": [
+      0.07,
+      0.07,
+      0.075
+    ]
+  },
+  "postEffectSettings": {
+    "sharpness": {
+      "enabled": false,
+      "amount": 0
+    },
+    "bloom": {
+      "enabled": false,
+      "intensity": 0.1,
+      "blurLevel": 2
+    },
+    "grading": {
+      "enabled": false,
+      "brightness": 1,
+      "contrast": 1,
+      "saturation": 1,
+      "tint": [
+        1,
+        1,
+        1
+      ]
+    },
+    "vignette": {
+      "enabled": false,
+      "intensity": 0.5,
+      "inner": 0.3,
+      "outer": 0.75,
+      "curvature": 1
+    },
+    "fringing": {
+      "enabled": false,
+      "intensity": 0.5
+    }
+  },
+  "animTracks": [],
+  "cameras": [
+    {
+      "initial": {
+        "position": [
+          1.4,
+          1.5,
+          0.5
+        ],
+        "target": [
+          -3.0,
+          1.0,
+          -1.5
+        ],
+        "fov": 70
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "position": [
+        -6.55,
+        1.8,
+        -3.1
+      ],
+      "title": "Seascape with two botters",
+      "text": "Above the sofa hung a seascape with two botters, traditional Dutch fishing boats. The Sonnevelds paired avant-garde furniture with fairly traditional painting.",
+      "extras": {
+        "id": "seascape"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -3.0,
+            1.6,
+            -1.4
+          ],
+          "target": [
+            -6.55,
+            1.8,
+            -3.1
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -3.91,
+        0.95,
+        -0.51
+      ],
+      "title": "The grand piano",
+      "text": "The grand piano is already drawn into the architects’ design for the living room. Its place was fixed before the house was built.",
+      "extras": {
+        "id": "piano"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -1.0,
+            1.6,
+            -2.6
+          ],
+          "target": [
+            -3.91,
+            0.95,
+            -0.51
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -6.24,
+        1.15,
+        -1.36
+      ],
+      "title": "Lion",
+      "text": "A seated lion by John Rädecker, one of the leading Dutch sculptors between the wars. It stands next to the piano on a pedestal designed by Brinkman & Van der Vlugt.",
+      "extras": {
+        "id": "lion"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -4.0,
+            1.55,
+            -2.2
+          ],
+          "target": [
+            -6.24,
+            1.15,
+            -1.36
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -2.94,
+        0.42,
+        0.1
+      ],
+      "title": "Cantilever chair with woven seat",
+      "text": "A tubular steel cantilever chair with a woven seat and back. Cane and rattan reached Dutch furniture makers mainly from the Dutch East Indies.",
+      "extras": {
+        "id": "rattan-chair"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -0.4,
+            1.6,
+            -1.4
+          ],
+          "target": [
+            -2.94,
+            0.42,
+            0.1
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -3.2,
+        0.6,
+        -3.2
+      ],
+      "title": "Tubular steel armchairs",
+      "text": "Serial tubular steel furniture and lamps by Gispen define the modern interior. The architects chose them from Gispen’s catalogues.",
+      "extras": {
+        "id": "gispen"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -0.8,
+            1.5,
+            -1.2
+          ],
+          "target": [
+            -3.2,
+            0.6,
+            -3.2
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -3.24,
+        -0.1,
+        -1.61
+      ],
+      "title": "The carpet",
+      "text": "The archive records a Moroccan carpet bought from Metz & Co, the Amsterdam shop for modern interiors.",
+      "extras": {
+        "id": "carpet"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -1.0,
+            1.9,
+            0.0
+          ],
+          "target": [
+            -3.24,
+            -0.1,
+            -1.61
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -2.52,
+        2.36,
+        -2.39
+      ],
+      "title": "Light without shadows",
+      "text": "The family chose 22 different lamps from Giso catalogue no. 29 (1929). The opal glass spreads the light evenly, without glare or hard shadows.",
+      "extras": {
+        "id": "lamps"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            0.2,
+            1.4,
+            -0.6
+          ],
+          "target": [
+            -2.52,
+            2.36,
+            -2.39
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -3.98,
+        1.5,
+        -5.55
+      ],
+      "title": "The ribbon window",
+      "text": "A steel frame carries the house, so the façade could open up into long bands of glass and the rooms could flow into each other.",
+      "extras": {
+        "id": "window"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -1.4,
+            1.6,
+            -1.6
+          ],
+          "target": [
+            -3.98,
+            1.5,
+            -5.55
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        -1.14,
+        0.6,
+        -4.5
+      ],
+      "title": "Desk and yellow chair",
+      "text": "In 1933 Mrs Sonneveld’s small desk stood by the window: Bruno Weil’s tubular steel B91. The yellow chair is one of Van der Leck’s colour accents.",
+      "extras": {
+        "id": "desk"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            -1.0,
+            1.6,
+            -2.0
+          ],
+          "target": [
+            -1.14,
+            0.6,
+            -4.5
+          ],
+          "fov": 60
+        }
+      }
+    },
+    {
+      "position": [
+        3.49,
+        0.6,
+        -3.57
+      ],
+      "title": "The library",
+      "text": "Behind the curtain lies the library, with its orange-red armchairs. A portrait attributed to Jozef Israëls hung against the bookcase.",
+      "extras": {
+        "id": "library"
+      },
+      "camera": {
+        "initial": {
+          "position": [
+            0.4,
+            1.6,
+            -4.4
+          ],
+          "target": [
+            3.49,
+            0.6,
+            -3.57
+          ],
+          "fov": 60
+        }
+      }
+    }
+  ],
+  "startMode": "default"
+}
